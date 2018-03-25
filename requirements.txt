@@ -1,0 +1,4 @@
+tornado==5.0.1
+sqlalchemy==1.2.5
+pypdf2==1.26.0
+wand==0.4.4

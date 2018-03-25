@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<script type="text/javascript" src="{{ static_url('main.js') }}"></script>
+<nav class="navbar navbar-dark bg-dark">
+    <ul class="nav navbar-nav navbar-right">
+        <span class="navbar-text">Список PDF</span>
+    </ul>
+    <ul class="nav justify-content-end">
+        <li class="nav-item"><span class="navbar-text">{{ current_user }}</span></li>
+        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+    </ul>
+</nav>
+    {% module Template('pdf_grid.html', items=items) %}
+    {% module Template('uploader.html') %}
+{% end %}
