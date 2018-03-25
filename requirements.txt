@@ -3,3 +3,4 @@ sqlalchemy==1.2.5
 pypdf2==1.26.0
 wand==0.4.4
 bcrypt==3.1.4
+prompt_toolkit==1.0.15
