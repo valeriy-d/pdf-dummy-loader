@@ -14,8 +14,9 @@
             <td>{{ row.get('book').username }}</td>
             <td><a href="{{ row['book'].path }}">{{ row['book'].name }}</a></td>
             <td>
-                {% for page, book in [a.values() for a in row['pages']] %}
-                    <a href="{{ page.path }}">{{ page.name }}</a>
+                {% for page in [a for a in row['pages']] %}
+
+                    <a href="{{ page['PageModel'].path }}">{{ page['PageModel'].name }}</a>
                 {% end %}
             </td>
         </tr>
